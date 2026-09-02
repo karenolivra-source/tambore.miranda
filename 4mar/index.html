@@ -425,29 +425,32 @@
   &lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"&gt;
   <style>
     @media only screen and (max-width: 480px) {
-      .wrapper { width: 100% !important; padding: 0 20px !important; }
-      .label-cell { width: 120px !important; font-size: 11px !important; }
-      .percent-cell { width: 38px !important; font-size: 11px !important; }
+      .wrapper { width: 100% !important; }
+      .spacer { width: 16px !important; }
+      .label-cell { width: 110px !important; font-size: 11px !important; }
+      .percent-cell { width: 36px !important; font-size: 11px !important; }
     }
   </style>
 &lt;/head&gt;
 &lt;body style="margin:0; padding:0; background:#4D260D;"&gt;
 
-<table class="wrapper" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family: 'Montserrat', Arial, sans-serif; background:#4D260D; padding: 0 60px;">
+<table class="wrapper" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family:'Montserrat',Arial,sans-serif; background:#4D260D;">
   <tr>
-    <td>
+    <!-- margem esquerda -->
+    <td class="spacer" width="60" style="font-size:0;">&nbsp;</td>
+    <td style="padding: 0;">
 
-      <!-- Linha 1: Tamboré Uberlândia — 100% de 200% = 50% da barra -->
+      <!-- Uberlândia: 100% → 50% da barra (escala 0–200%) -->
       <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:14px;">
         <tr>
-          <td class="label-cell" width="180" align="right" style="padding-right:12px; font-size:14px; color:#FFFFFF; font-family:'Montserrat',Arial,sans-serif; white-space:nowrap;">
+          <td class="label-cell" width="160" align="right" style="padding-right:12px; font-size:14px; color:#FFFFFF; font-family:'Montserrat',Arial,sans-serif; white-space:nowrap;">
             Tamboré Uberlândia
           </td>
-          <td>
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E6E6E6; height:20px;">
+          <td style="padding:0; background:#E6E6E6; height:20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="height:20px;">
               <tr>
                 <td width="50%" style="background:#BA9665; height:20px; font-size:0;">&nbsp;</td>
-                <td width="50%" style="font-size:0;">&nbsp;</td>
+                <td width="50%" style="background:#E6E6E6; height:20px; font-size:0;">&nbsp;</td>
               </tr>
             </table>
           </td>
@@ -457,16 +460,16 @@
         </tr>
       </table>
 
-      <!-- Linha 2: Tamboré Jundiaí — 200% de 200% = 100% da barra -->
-      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:0;">
+      <!-- Jundiaí: 200% → 100% da barra -->
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="label-cell" width="180" align="right" style="padding-right:12px; font-size:14px; color:#FFFFFF; font-family:'Montserrat',Arial,sans-serif; white-space:nowrap;">
+          <td class="label-cell" width="160" align="right" style="padding-right:12px; font-size:14px; color:#FFFFFF; font-family:'Montserrat',Arial,sans-serif; white-space:nowrap;">
             Tamboré Jundiaí
           </td>
-          <td>
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#CBC1B7; height:20px;">
+          <td style="padding:0; background:#E6E6E6; height:20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="height:20px;">
               <tr>
-                <td width="100%" style="background:#BA9665; height:20px; line-height:20px; font-size:0;">&nbsp;</td>
+                <td width="100%" style="background:#BA9665; height:20px; font-size:0;">&nbsp;</td>
               </tr>
             </table>
           </td>
@@ -477,6 +480,8 @@
       </table>
 
     </td>
+    <!-- margem direita -->
+    <td class="spacer" width="60" style="font-size:0;">&nbsp;</td>
   </tr>
 </table>
 
